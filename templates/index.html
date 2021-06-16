@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz 2</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Krishna Teja Chintala Cheruvu</h1>
+    <h3>1001861564</h3>
+</div>
+<div>
+    <form action="{{url_for('eq_net')}}" enctype=multipart/form-data method="POST" style="width:30%;">
+        <fieldset>
+            <legend>Search Earthquakes</legend>
+            <p>Enter the time range</p>
+            <label for="stime">Enter start time </label>
+            <input type="text" id="stime" name="stime"><br><br>
+            <label for="sttime">Enter the stop time</label>
+            <input type="text" id="sttime" name="sttime"><br><br>
+            <label for="netv">Enter net value</label>
+            <input type="text" id="netv" name="netv"><br><br>
+            <a href="/eqnet"><input type="submit" value="Find"></a>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

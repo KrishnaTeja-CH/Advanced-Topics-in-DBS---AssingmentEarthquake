@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Krishna Teja Chintala Cheruvu</h1>
+    <h2>1001861564</h2>
+</div>
+<div>
+<p>A</p>
+    <table style="border:1px dotted black">
+        <tr style="border:1px dotted black">
+            <th style="border:1px dotted black">Time</th>
+            <th style="border:1px dotted black">Time2</th>
+            <th style="border:1px dotted black">Latitude</th>
+            <th style="border:1px dotted black">Longitude</th>
+            <th style="border:1px dotted black">Place</th>
+            <th style="border:1px dotted black">Net</th>
+            <th style="border:1px dotted black">Mag</th>
+        </tr>
+        {% for values in earthquakes %}
+        <tr style="border:1px dotted black">
+            {% for data in values %}
+            <td style="border:1px dotted black">{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes is:</h3>
+    <h5>{{length}}</h5>
+<p>B</p>
+<table style="border:1px dotted black">
+        <tr style="border:1px dotted black">
+            <th style="border:1px dotted black">Time</th>
+            <th style="border:1px dotted black">Time2</th>
+            <th style="border:1px dotted black">Latitude</th>
+            <th style="border:1px dotted black">Longitude</th>
+            <th style="border:1px dotted black">Place</th>
+            <th style="border:1px dotted black">Net</th>
+            <th style="border:1px dotted black">Mag</th>
+        </tr>
+        {% for values in earthquakes1 %}
+        <tr style="border:1px dotted black">
+            {% for data in values %}
+            <td style="border:1px dotted black">{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes is:</h3>
+    <h5>{{length1}}</h5>
+</div>
+</body>
+</html>
